@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- shape of imageview when the particular page is not selected-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" android:useLevel="true">
+
+    <size android:height="10dip" android:width="10dip"/>
+
+    <solid android:color="@color/large_dot"/>
+</shape>

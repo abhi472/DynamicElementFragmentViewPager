@@ -1,4 +1,4 @@
-package com.example.abhishek.dynamicelementfragmentviewpager;
+package com.example.abhishek.dynamicelementfragmentviewpager.Adapters;
 
 
 
@@ -9,15 +9,18 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.view.View;
 
 
+import com.example.abhishek.dynamicelementfragmentviewpager.Fragments.HolderFragm;
+import com.example.abhishek.dynamicelementfragmentviewpager.Models.ContestContent;
+
 import java.util.ArrayList;
 
 
 public class CustomPagerAdapter extends FragmentStatePagerAdapter {
 
-   public ArrayList<Integer> imageResources;
+   public ArrayList<ContestContent> imageResources;
 
 
-    public CustomPagerAdapter(FragmentManager fm, ArrayList<Integer> imageResources) {
+    public CustomPagerAdapter(FragmentManager fm, ArrayList<ContestContent> imageResources) {
         super(fm);
         this.imageResources=imageResources;
     }
@@ -27,7 +30,9 @@ public class CustomPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         HolderFragm fragm = new HolderFragm();
         Bundle bundle = new Bundle();
-        bundle.putInt("color",imageResources.get(position));
+        bundle.putString("image",imageResources.get(position).image);
+        bundle.putString("desc",imageResources.get(position).shortDesc);
+        bundle.putString("title",imageResources.get(position).title);
         fragm.setArguments(bundle);
         return fragm;
     }

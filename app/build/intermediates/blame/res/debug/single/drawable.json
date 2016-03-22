@@ -16,6 +16,10 @@
         "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable/abc_edit_text_material.xml"
     },
     {
+        "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/drawable/selecteditem_dot.xml",
+        "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/src/main/res/drawable/selecteditem_dot.xml"
+    },
+    {
         "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
         "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable/abc_cab_background_top_material.xml"
     },
@@ -30,6 +34,10 @@
     {
         "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
         "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/drawable/nonselecteditem_dot.xml",
+        "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/src/main/res/drawable/nonselecteditem_dot.xml"
     },
     {
         "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
