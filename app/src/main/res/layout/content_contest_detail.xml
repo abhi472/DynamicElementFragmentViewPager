@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.abhishek.dynamicelementfragmentviewpager.Activities.ContestDetail"
+    tools:showIn="@layout/activity_contest_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textSize="16dp"
+        android:id="@+id/contestTitle"
+        android:text="Valentine Day Special"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:lineSpacingExtra="1dp"
+        android:textSize="10sp"
+        android:id="@+id/contestDesc"
+        android:text="Get Highest Cashback on Mobile Recharge Cashback on Mobile Recharge \nGet Highest Cashback on Mobile Recharge Cashback on Mobile Recharge"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"/>
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:id="@+id/banner"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/contest_banner_31"
+      />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/white"
+        android:background="@color/buttonColor"
+        android:text="Go to FlipKart Store"
+        android:layout_marginBottom="8dp"/>
+
+
+
+
+</LinearLayout>
+    </ScrollView>

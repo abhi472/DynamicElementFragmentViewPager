@@ -96,6 +96,10 @@
         "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/layout/activity_contest_detail.xml",
+        "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/src/main/res/layout/activity_contest_detail.xml"
+    },
+    {
         "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
         "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_layout_tab_icon.xml"
     },
@@ -150,6 +154,10 @@
     {
         "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
         "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/layout/content_contest_detail.xml",
+        "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/src/main/res/layout/content_contest_detail.xml"
     },
     {
         "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",

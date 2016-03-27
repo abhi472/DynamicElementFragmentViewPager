@@ -2,6 +2,7 @@ package com.example.abhishek.dynamicelementfragmentviewpager.Activities;
 
 import android.annotation.TargetApi;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -99,7 +100,8 @@ public class FirstPage extends AppCompatActivity implements ICallBack, ViewPager
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent intent = new Intent(FirstPage.this,ContestDetail.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

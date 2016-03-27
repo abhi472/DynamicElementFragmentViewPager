@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="transparent">#00000000</color>
     <color name="black">#000</color>
+    <color name="buttonColor">#1E88E5</color>
+    <color name="white">#fff</color>
     <!-- card colors -->
     <color name="card_background">#ffffff</color>
     <color name="card_shadow_1">#d4d4d4</color>
