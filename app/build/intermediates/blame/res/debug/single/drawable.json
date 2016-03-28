@@ -88,10 +88,6 @@
         "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/drawable/contest_banner_31.png",
-        "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/src/main/res/drawable/contest_banner_31.png"
-    },
-    {
         "merged": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
         "source": "/home/abhishek/AndroidStudioProjects/DynamicElementFragmentViewPager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },

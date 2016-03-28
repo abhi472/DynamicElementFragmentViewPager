@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:textSize="16dp"
-        android:text="Valentine Day Special"
+        android:id="@+id/contestTitle"
         android:textColor="@color/black"
         android:gravity="center"/>
     <TextView
@@ -24,6 +24,7 @@
         android:layout_height="32dp"
         android:lineSpacingExtra="1dp"
         android:textSize="10sp"
+        android:id="@+id/contestDesc"
         android:text="Get Highest Cashback on Mobile Recharge Cashback on Mobile Recharge \nGet Highest Cashback on Mobile Recharge Cashback on Mobile Recharge"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingStart="@dimen/activity_horizontal_margin"
@@ -32,17 +33,23 @@
     <com.android.volley.toolbox.NetworkImageView
         android:layout_width="match_parent"
         android:layout_height="206dp"
+        android:id="@+id/banner"
         android:layout_marginTop="8dp"
-        android:background="@drawable/contest_banner_31"
       />
     <Button
         android:layout_width="match_parent"
         android:layout_height="32dp"
+        android:id="@+id/storeButton"
         android:layout_margin="8dp"
         android:textColor="@color/white"
         android:background="@color/buttonColor"
         android:text="Go to FlipKart Store"
         android:layout_marginBottom="8dp"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableContent"/>
 
 
 
