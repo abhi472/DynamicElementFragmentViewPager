@@ -36,25 +36,26 @@ public class ContestDetail extends AppCompatActivity implements ICallBack{
     StringBuilder url = new StringBuilder("http://staging.lafalafa.com/api/getContestApi/");
     ImageLoader imageLoader = AppController.getInstance().getImageLoader();
     WebView tableContent;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contest_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         progressDialog = new ProgressDialog(this);
+<<<<<<< HEAD
         progressDialog.isIndeterminate();
         progressDialog.setCancelable(false);
         progressDialog.show();
+=======
+>>>>>>> 474401db75bcf8b040e24764e4f067d53474adaf
         contestTitle = (TextView)findViewById(R.id.contestTitle);
         contestDesc = (TextView)findViewById(R.id.contestDesc);
         storeButton = (Button)findViewById(R.id.storeButton);
         banner = (NetworkImageView)findViewById(R.id.banner);
         tableContent = (WebView)findViewById(R.id.tableContent);
         tableContent.getSettings().setJavaScriptEnabled(true);
+<<<<<<< HEAD
         bundle =getIntent().getExtras();
         id=bundle.getString("id");
         url.append(id);
@@ -68,6 +69,10 @@ public class ContestDetail extends AppCompatActivity implements ICallBack{
 
 
 
+=======
+        progressDialog.show();
+        ApiManager.getInstance().sendReq(this, url);
+>>>>>>> 474401db75bcf8b040e24764e4f067d53474adaf
     }
 
     @Override
@@ -84,6 +89,7 @@ public class ContestDetail extends AppCompatActivity implements ICallBack{
         try {
             JsonFactory jsonFactory = new JsonFactory();
             JsonParser jsonParser = jsonFactory.createJsonParser(reqresult);
+<<<<<<< HEAD
             contestsDetail = om.readValue(jsonParser, ContestsDetail.class);
         } catch (Exception e) {
             e.printStackTrace();
@@ -106,6 +112,20 @@ public class ContestDetail extends AppCompatActivity implements ICallBack{
 
 
 
+=======
+            contestsDetail = om.readValue(jsonParser, ContestsDetail.class);            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        contestTitle.setText(contestsDetail.Contests.contestTitle);
+        imageval=contestsDetail.Contests.banner;
+        if (imageLoader == null)
+            imageLoader = AppController.getInstance().getImageLoader();
+        banner.setImageUrl(imageval, imageLoader);
+        TOC = contestsDetail.Contests.contestTOC;
+        tableContent.loadData(TOC,"text/html", "UTF-8");
+        progressDialog.dismiss();
+>>>>>>> 474401db75bcf8b040e24764e4f067d53474adaf
     }
 
     @Override
