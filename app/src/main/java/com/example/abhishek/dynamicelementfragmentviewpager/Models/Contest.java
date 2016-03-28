@@ -6,11 +6,11 @@ package com.example.abhishek.dynamicelementfragmentviewpager.Models;
 public class Contest {
 
     public String id;
-    public String expDate;
-    public String contestTitle;
+    public String title;
+    public String shortDesc;
     public String contestTOC;
-    public String banner;
-    public String storeLogo;
-    public String storeName;
-    public String url;
+    public String image;
+    public String contestUrl;
+    public String contestType;
+
 }

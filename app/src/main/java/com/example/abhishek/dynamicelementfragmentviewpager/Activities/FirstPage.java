@@ -56,6 +56,7 @@ public class FirstPage extends AppCompatActivity implements ICallBack, ViewPager
         viewPager.addOnPageChangeListener(this);
         progressDialog.show();
         ApiManager.getInstance().sendReq(this, url);
+
     }
 
     ///this function inflates the linearlayout with imageviews with circular dots depending upon the size of adapter

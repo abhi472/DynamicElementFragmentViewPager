@@ -14,8 +14,8 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:textSize="16dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
         android:id="@+id/contestTitle"
         android:textColor="@color/black"
         android:gravity="center"/>
@@ -23,33 +23,41 @@
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:lineSpacingExtra="1dp"
-        android:textSize="10sp"
+        android:textSize="14sp"
         android:id="@+id/contestDesc"
         android:text="Get Highest Cashback on Mobile Recharge Cashback on Mobile Recharge \nGet Highest Cashback on Mobile Recharge Cashback on Mobile Recharge"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingStart="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingEnd="@dimen/activity_horizontal_margin"/>
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:paddingRight="8dp"
+        android:paddingEnd="8dp"/>
     <com.android.volley.toolbox.NetworkImageView
         android:layout_width="match_parent"
-        android:layout_height="206dp"
+        android:scaleType="fitXY"
+        android:layout_height="170dp"
         android:id="@+id/banner"
+
         android:layout_marginTop="8dp"
       />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="32dp"
+        android:layout_height="40dp"
         android:id="@+id/storeButton"
         android:layout_margin="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="16dp"
         android:textColor="@color/white"
         android:background="@color/buttonColor"
         android:text="Go to FlipKart Store"
-        android:layout_marginBottom="8dp"/>
+        />
+
 
     <WebView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tableContent"/>
+        android:id="@+id/tableContent"
+        />
+
+
 
 
 

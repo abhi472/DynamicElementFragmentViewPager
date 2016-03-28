@@ -6,6 +6,7 @@ public class ContestsDetail {
     public String api_key;
     public String message;
     public String errorMsg;
-    public Contest Contests;
+    public Contest contest;
+
 
 }

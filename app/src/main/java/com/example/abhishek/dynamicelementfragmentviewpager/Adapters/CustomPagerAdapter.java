@@ -33,6 +33,7 @@ public class CustomPagerAdapter extends FragmentStatePagerAdapter {
         bundle.putString("image",imageResources.get(position).image);
         bundle.putString("desc",imageResources.get(position).shortDesc);
         bundle.putString("title",imageResources.get(position).title);
+        bundle.putString("id",imageResources.get(position).id);
         fragm.setArguments(bundle);
         return fragm;
     }

@@ -29,9 +29,11 @@ public class ContestDetail extends AppCompatActivity implements ICallBack{
     TextView contestTitle,contestDesc;
     Button storeButton;
     ObjectMapper om = new ObjectMapper();
+    String id;
+    Bundle bundle;
     NetworkImageView banner;
     ProgressDialog progressDialog;
-    String url="http://staging.lafalafa.com/api/getContest";
+    StringBuilder url = new StringBuilder("http://staging.lafalafa.com/api/getContestApi/");
     ImageLoader imageLoader = AppController.getInstance().getImageLoader();
     WebView tableContent;
 
@@ -44,19 +46,20 @@ public class ContestDetail extends AppCompatActivity implements ICallBack{
         setSupportActionBar(toolbar);
 
         progressDialog = new ProgressDialog(this);
-
-
-
+        progressDialog.isIndeterminate();
+        progressDialog.setCancelable(false);
+        progressDialog.show();
         contestTitle = (TextView)findViewById(R.id.contestTitle);
         contestDesc = (TextView)findViewById(R.id.contestDesc);
         storeButton = (Button)findViewById(R.id.storeButton);
         banner = (NetworkImageView)findViewById(R.id.banner);
         tableContent = (WebView)findViewById(R.id.tableContent);
         tableContent.getSettings().setJavaScriptEnabled(true);
-
+        bundle =getIntent().getExtras();
+        id=bundle.getString("id");
+        url.append(id);
         progressDialog.show();
-
-        ApiManager.getInstance().sendReq(this, url);
+        ApiManager.getInstance().sendReq(this, url.toString());
 
 
 
@@ -74,23 +77,31 @@ public class ContestDetail extends AppCompatActivity implements ICallBack{
         String reqresult=result.trim();
         String imageval;
         String TOC;
+        String Desc;
+
+
 
         try {
             JsonFactory jsonFactory = new JsonFactory();
             JsonParser jsonParser = jsonFactory.createJsonParser(reqresult);
-            contestsDetail = om.readValue(jsonParser, ContestsDetail.class);            // txtShowJson.setText(cust.getCatn());
+            contestsDetail = om.readValue(jsonParser, ContestsDetail.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        contestTitle.setText(contestsDetail.Contests.contestTitle);
-        imageval=contestsDetail.Contests.banner;
-        if (imageLoader == null)
-            imageLoader = AppController.getInstance().getImageLoader();
-        banner.setImageUrl(imageval, imageLoader);
-        TOC = contestsDetail.Contests.contestTOC;
-        tableContent.loadData(TOC,"text/html", "UTF-8");
 
-        progressDialog.dismiss();
+
+             contestTitle.setText(contestsDetail.contest.title);
+             imageval = contestsDetail.contest.image;
+             if (imageLoader == null)
+                 imageLoader = AppController.getInstance().getImageLoader();
+             banner.setImageUrl(imageval, imageLoader);
+             TOC = contestsDetail.contest.contestTOC;
+             Desc = contestsDetail.contest.shortDesc;
+             contestDesc.setText(Desc);
+             tableContent.loadData(TOC, "text/html", "UTF-8");
+             progressDialog.dismiss();
+
+
 
 
 
